@@ -36,7 +36,7 @@ const DetailProductComponent = ({route}: DetailProductProps) => {
       />
       <RowInfo title={'Name'} value={product?.name ?? ''} />
       <RowInfo title={'Category'} value={product?.category ?? ''} />
-      <RowInfo title={'Date'} value={product?.date ?? ''} />
+      <RowInfo title={'Date'} value={product?.date + '' ?? ''} />
     </View>
   );
 };

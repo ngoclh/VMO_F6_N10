@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
 const ListProductsComponent = () => {
   // state
   const [data] = useState<Array<Products>>(listData);
+
   // function
   const onItemPress = useCallback((product: Products) => {
     navigate(APP_SCREEN.DETAIL_PRODUCT, {product});
