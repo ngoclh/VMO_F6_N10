@@ -1,0 +1,2 @@
+export const INCREMENT = 'INCREMENT';
+export const CONTINUE_INCREMENT = 'CONTINUE_INCREMENT';

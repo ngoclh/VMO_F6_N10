@@ -12,6 +12,12 @@ export enum APP_SCREEN {
   DEMO_REDUX = 'DEMO_REDUX',
   DR_TODO_LIST = 'DR_TODO_LIST',
   DR_ADD_TOTO = 'DR_ADD_TOTO',
+
+  DEMO_SAGA = 'DEMO_SAGA',
+  DS_INCREMENT = 'DS_INCREMENT',
+
+  DEMO_ANIMATED = 'DEMO_ANIMATED',
+  DA_ANIMATED = 'DA_ANIMATED',
 }
 
 export type RootStackParamList = {
@@ -26,4 +32,10 @@ export type RootStackParamList = {
   [APP_SCREEN.DEMO_REDUX]: undefined;
   [APP_SCREEN.DR_TODO_LIST]: undefined;
   [APP_SCREEN.DR_ADD_TOTO]: undefined;
+
+  [APP_SCREEN.DEMO_SAGA]: undefined;
+  [APP_SCREEN.DS_INCREMENT]: undefined;
+
+  [APP_SCREEN.DEMO_ANIMATED]: undefined;
+  [APP_SCREEN.DA_ANIMATED]: undefined;
 };

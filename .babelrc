@@ -1,0 +1,16 @@
+{
+  "env": {
+    "production": {}
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@model": "./src/app/model"
+        }
+      }
+    ]
+  ]
+}

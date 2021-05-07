@@ -4,9 +4,11 @@ import {
 } from '@react-navigation/stack';
 import React, {useMemo} from 'react';
 
+import {DemoAnimated} from './demoAnimated';
 import {DemoContext} from './demoContext';
 import {DemoNavigation} from './demoNavigation';
 import {DemoRedux} from './demoRedux';
+import {DemoSaga} from './demoSaga';
 import {APP_SCREEN, RootStackParamList} from './screenTypes';
 
 const RootStack = createStackNavigator<RootStackParamList>();
@@ -22,7 +24,7 @@ export const RootNavigation = () => {
   // render
   return (
     <RootStack.Navigator
-      initialRouteName={APP_SCREEN.DEMO_REDUX}
+      initialRouteName={APP_SCREEN.DA_ANIMATED}
       screenOptions={screenOptions}>
       <RootStack.Screen
         name={APP_SCREEN.DEMO_NAVIGATION}
@@ -33,6 +35,11 @@ export const RootNavigation = () => {
         component={DemoContext}
       />
       <RootStack.Screen name={APP_SCREEN.DEMO_REDUX} component={DemoRedux} />
+      <RootStack.Screen name={APP_SCREEN.DEMO_SAGA} component={DemoSaga} />
+      <RootStack.Screen
+        name={APP_SCREEN.DA_ANIMATED}
+        component={DemoAnimated}
+      />
     </RootStack.Navigator>
   );
 };

@@ -1,6 +1,5 @@
 import {ReactElement} from 'react';
-
-import {Todo} from '../../../model/N10_context';
+import {Todo} from '@model/N10_context';
 
 export interface Action<T = any> {
   type: string;
