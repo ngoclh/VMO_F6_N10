@@ -24,7 +24,7 @@ export const RootNavigation = () => {
   // render
   return (
     <RootStack.Navigator
-      initialRouteName={APP_SCREEN.DA_ANIMATED}
+      initialRouteName={APP_SCREEN.DEMO_SAGA}
       screenOptions={screenOptions}>
       <RootStack.Screen
         name={APP_SCREEN.DEMO_NAVIGATION}
